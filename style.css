@@ -1,39 +1,43 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    background-color: #000000; 
-     color: white;
+body {
+    background-color: #000000;
+    color: white;
     font-family: "Poppins", sans-serif;
 }
 
-.box{
+.break{
+    height: 5px;
+}
+
+.box {
     display: flex;
     gap: 5px;
 }
 
-.left{
+.left {
     border-radius: 25px;
-    padding: 15px;
     width: 30%;
-    background-color: #1f1f1f;
-    display: grid;
-    gap: 15px;
 }
 
-.left span{
+.homesection {
+    border-radius: 25px;
+    padding: 15px;
+    width: 93%;
+    background-color: #1f1f1f;
+    gap: 15px;
+    display: grid;
+}
+
+.homesection span {
     position: absolute;
-    top: 27px;
-    left: 55px;
+    top: 25px;
+    left: 60px;
     font-size: large;
     font-weight: 600;
 }
 
-.textbar{
-    display: flex;
-}
-
-.textbar input{
+.textbar input {
     height: 2px;
     padding: 15px;
     background-color: rgb(46, 46, 46);
@@ -45,14 +49,57 @@ body{
 .library{
     border-radius: 25px;
     padding: 15px;
-    width: 28%;
+    width: 93%;
     background-color: #1f1f1f;
-    display: grid; 
-    position: relative;
-    top: 5px; 
+    display: grid;
+    font-size: medium;
+    font-weight: 700;
 }
 
-.right{
+.lib img{
+    display: flexbox;
+}
+
+.playlist{
+    background-color: #272829;
+    border-radius: 25px;
+    padding: 0 10px;
+    line-height: 9px;
+    height: 140px;
+}
+
+.playlist button{
+    padding: 8px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    width: 150px;
+}
+
+.anchors{
+    padding: 0 10px;
+    line-height: 25px;
+    height: 230px;
+}
+
+.anchors ul{
+    list-style-type: none;
+}
+
+.anchors a{
+    color: rgba(205, 203, 200, 0.765);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: small;
+}
+
+.anchors a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.right {
     border: 1px solid white;
     border-radius: 25px;
     padding: 15px;
