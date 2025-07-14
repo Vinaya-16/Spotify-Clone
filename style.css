@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #000000; 
+     color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.box{
+    display: flex;
+    gap: 5px;
+}
+
+.left{
+    border-radius: 25px;
+    padding: 15px;
+    width: 30%;
+    background-color: #1f1f1f;
+    display: grid;
+    gap: 15px;
+}
+
+.left span{
+    position: absolute;
+    top: 27px;
+    left: 55px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.textbar{
+    display: flex;
+}
+
+.textbar input{
+    height: 2px;
+    padding: 15px;
+    background-color: rgb(46, 46, 46);
+    border: none;
+    border-radius: 25px;
+    width: 350px;
+}
+
+.library{
+    border-radius: 25px;
+    padding: 15px;
+    width: 28%;
+    background-color: #1f1f1f;
+    display: grid; 
+    position: relative;
+    top: 5px; 
+}
+
+.right{
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 15px;
+    width: 70%;
+    background-color: #1f1f1f;
+    border: none;
+}
