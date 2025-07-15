@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+body { 
     background-color: #000000;
     color: white;
     font-family: "Poppins", sans-serif;
 }
 
-.break{
+.break {
     height: 5px;
 }
 
@@ -17,7 +17,7 @@ body {
 
 .left {
     border-radius: 25px;
-    width: 30%;
+    width: 29%;
 }
 
 .homesection {
@@ -43,10 +43,11 @@ body {
     background-color: rgb(46, 46, 46);
     border: none;
     border-radius: 25px;
-    width: 350px;
+    width: 300px;
+    color: white;
 }
 
-.library{
+.library {
     border-radius: 25px;
     padding: 15px;
     width: 93%;
@@ -56,11 +57,11 @@ body {
     font-weight: 700;
 }
 
-.lib img{
+.lib img {
     display: flexbox;
 }
 
-.playlist{
+.playlist {
     background-color: #272829;
     border-radius: 25px;
     padding: 0 10px;
@@ -68,7 +69,7 @@ body {
     height: 140px;
 }
 
-.playlist button{
+.playlist button {
     padding: 8px;
     border-radius: 25px;
     border: none;
@@ -77,33 +78,97 @@ body {
     width: 150px;
 }
 
-.anchors{
+.anchors {
     padding: 0 10px;
     line-height: 25px;
     height: 230px;
 }
 
-.anchors ul{
+.anchors ul {
     list-style-type: none;
 }
 
-.anchors a{
+.anchors a {
     color: rgba(205, 203, 200, 0.765);
     text-decoration: none;
     font-weight: 300;
     font-size: small;
 }
 
-.anchors a:hover{
+.anchors a:hover {
     text-decoration: none;
     color: white;
 }
 
 .right {
-    border: 1px solid white;
     border-radius: 25px;
     padding: 15px;
     width: 70%;
     background-color: #1f1f1f;
     border: none;
+}
+
+.log {
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #272829;
+    border-radius: 15px;
+}
+
+.btn1 {
+    border: none;
+    height: 30px;
+    width: 70px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1, 1);
+    transition: transform 0.3s ease;
+}
+
+.btn1:hover {
+    transform: scale(1.2,1.2);
+}
+
+.btn2 {
+    border: none;
+    height: 30px;
+    width: 70px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    color: gray;
+}
+
+.btn2:hover{
+    color: white;
+}
+
+.cardcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card{
+    background-color: #000000;
+    width: 177px;
+    height: 290px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card img{
+    height: 170px;
+    width: 177px;
+    border-radius: 15px;
 }
