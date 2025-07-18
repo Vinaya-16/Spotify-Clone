@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body { 
+body {
     background-color: #000000;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -61,7 +61,7 @@ body {
     display: flexbox;
 }
 
-.playlist {
+/* .playlist {
     background-color: #272829;
     border-radius: 25px;
     padding: 0 10px;
@@ -76,7 +76,7 @@ body {
     font-size: 15px;
     font-weight: bold;
     width: 150px;
-}
+} */
 
 .anchors {
     padding: 0 10px;
@@ -106,6 +106,8 @@ body {
     width: 70%;
     background-color: #1f1f1f;
     border: none;
+    height: 95vh;
+    overflow-y: scroll;
 }
 
 .log {
@@ -132,7 +134,7 @@ body {
 }
 
 .btn1:hover {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 
 .btn2 {
@@ -148,17 +150,17 @@ body {
     color: gray;
 }
 
-.btn2:hover{
+.btn2:hover {
     color: white;
 }
 
-.cardcontainer{
+.cardcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
-.card{
+.card {
     background-color: #000000;
     width: 177px;
     height: 290px;
@@ -168,28 +170,53 @@ body {
     position: relative;
 }
 
-.card:hover{
-    opacity: 20%;
+.card:hover {
+    opacity: 40%;
 }
 
-.card img{
+.card img {
     height: 170px;
     width: 177px;
     border-radius: 15px;
 }
 
-.card span{
+.card span {
     position: absolute;
     top: 160px;
     left: 150px;
-    background-color: rgb(22, 226, 22);
+    background-color: #13ec13;
     border-radius: 50px;
     font-size: xx-large;
-     transform: scale(1, 1);
-    transition: transform 0.3s ease;
+    transform: scale(1, 1);
+    transition: opacity 0.3s ease;
+    opacity: 0;
 }
 
-.card span:hover{
-     transform: scale(1.5,1.5); 
-     background-color: rgb(134, 239, 134);  
+.card:hover .play-button {
+    opacity: 1;
+}
+
+.play-button:hover {
+    transform: scale(1.5, 1.5);
+    background-color: rgb(134, 239, 134);
+}
+
+.playbar{
+    position: sticky;
+    position: absolute;
+    bottom: 0;
+    background-color: #000000;
+    width: 97vw;
+    height: 70px;
+    justify-items: center;
+    align-content: bottom;
+    gap: 25px;
+}
+
+.playbar span{
+    font-size: xxx-large;
+}
+
+#range{
+    width: 100vh;
 }
